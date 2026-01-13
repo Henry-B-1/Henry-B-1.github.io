@@ -1,0 +1,361 @@
+/*  所有标签样式初始化: 
+ 1.内边距为0
+ 2.外边距为0  
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/*  body标签: 
+ 1.字号14像素
+ 2.字体微软雅黑  
+*/
+body {
+  font: 14px 微软雅黑;
+}
+/*  列表标签: 
+ 1.去除圆点，清除默认列表样式  
+*/
+li {
+  list-style: none;
+}
+/*  超链接标签: 
+ 1.块状显示，块级元素
+ 2.去除下划线
+*/
+a {
+  display: block;
+  text-decoration: none;
+}
+select {
+  box-sizing: content-box;
+}
+/* 内容区域：
+ 1.宽度980像素
+ 2.外边距：上下0 左右居中  
+*/
+.content {
+  width: 980px;
+  margin: 0 auto;
+}
+/* 头部区域：
+ 1.高50像素
+ 2.内上边距30px 
+*/
+.top {
+  height: 50px;
+  padding-top: 30px;
+}
+/* 浮动样式：
+ 1.左浮动
+*/
+.left {
+  float: left;
+}
+/* 浮动样式：
+ 1.右浮动
+*/
+.right {
+  float: right;
+}
+/*  导航部分：
+ 1.高35像素
+ 2.背景色#0373b9
+ 3.行高35像素，竖直居中
+*/
+.nav {
+  height: 35px;
+  background: #0373b9;
+  line-height: 35px;
+}
+/*  导航部分-列表项：
+ 1.左浮动
+*/
+.nav ul li {
+  float: left;
+}
+/*  导航部分-超链接：
+ 1.字颜色#fff
+ 2.内边距上下0px左右40像素
+ 3.字号16像素
+*/
+.nav ul li a {
+  color: #fff;
+  padding: 0px 40px;
+  font-size: 16px;
+}
+/*鼠标经过菜单悬停效果：
+ 1.背景#25abff
+ 需要自行补充合适的选择器
+*/
+.nav ul li a:hover {
+  background: #25abff;
+}
+/*  banner部分：
+ 1.高580像素
+ 2.定位参照，相对定位
+*/
+.banner {
+  height: 580px;
+  position: relative;
+}
+/*  banner部分-图片：
+ 1.宽100%
+ 2.高100%
+ 3.绝对定位
+*/
+.banner img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+/*  banner部分-列表：
+ 1.左35%
+ 2.底20像素
+ 3.绝对定位
+*/
+.banner ul {
+  left: 35%;
+  bottom: 20px;
+  position: absolute;
+}
+/*  banner部分-列表项：
+ 1.宽120像素
+ 2.高12像素
+ 3.背景#0373b9
+ 4.左浮动
+ 5.外边距6像素
+ 6.鼠标手形
+*/
+.banner ul li {
+  width: 120px;
+  height: 12px;
+  background: #0373b9;
+  float: left;
+  margin: 6px;
+  cursor: pointer;
+}
+/*banner部分-激活按钮：
+ 1.背景色 #ffcc00
+需要自行补充合适的选择器
+*/
+.banner ul li.hot {
+  background: #ffcc00;
+}
+/*内容部分：
+ 1.字号24像素
+ 2.字颜色#666
+ 3.下边线，底部边框：7像素 实线 #0373b9
+ 4.外边距：上下20像素 左右0
+ 5.不加粗
+ 6.内边距：上下20像素 左右0
+*/
+.content h2 {
+  font-size: 24px;
+  color: #666;
+  border-bottom: 7px solid #0373b9;
+  margin: 20px 0;
+  font-weight: normal;
+  padding: 20px 0;
+}
+/*无序列表环境展示-列表项：
+ 1.左浮动
+ 2.外边距9像素
+ 3.超出范围隐藏
+ 4.宽226像素
+ 5.高129像素
+ 6.定位参照，相对定位
+*/
+ul.list li {
+  float: left;
+  margin: 9px;
+  overflow: hidden;
+  width: 226px;
+  height: 129px;
+  position: relative;
+}
+/*无序列表环境展示-图片：
+ 1.2.宽、高和父层一样大
+*/
+ul.list img {
+  width: 100%;
+  height: 100%;
+}
+/*无序列表环境展示-黑色遮罩：
+ 1.2.宽、高和父层一样大
+ 3.背景黑色80%透明
+ 4.绝对定位
+ 5.左0
+ 6.底-100%
+ 7.动画时间2s
+*/
+ul.list li .info {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  transition: 2s;
+}
+/*制作鼠标经过ul.list li悬停时的info动画：
+ 1.底部为0
+ 需要自行补充合适的选择器
+*/
+ul.list li:hover .info {
+  bottom: 0;
+}
+/*无序列表环境展示-黑色遮罩里的更多按钮：
+ 1.宽180像素
+ 2.高36像素
+ 3.背景#0373b9
+ 4.字颜色#fff
+ 5.圆角5像素
+ 6.文字水平居中
+ 7.行高36像素，竖直居中
+ 8.外边距上下50像素 左右居中
+*/
+.info a {
+  width: 180px;
+  height: 36px;
+  background: #0373b9;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 36px;
+  margin: 50px auto;
+}
+/*美食新品部分盒子：
+ 1.高300像素
+*/
+.box {
+  height: 300px;
+}
+/*美食新品左半部分：
+ 1.宽638像素
+ 2.高300像素
+*/
+.sub1 {
+  width: 638px;
+  height: 300px;
+}
+/*美食新品左半部分-表格：
+ 1.边框折叠，单线条边框
+*/
+.sub1 table {
+  border-collapse: collapse;
+}
+/*美食新品左半部分-表格：
+ 1.边框：1像素 实线 #ccc
+*/
+.sub1 table,
+.sub1 th,
+.sub1 td {
+  border: 1px solid #ccc;
+}
+/*美食新品左半部分-表格：
+ 1.文字居中
+*/
+th,
+td {
+  text-align: center;
+}
+/*美食新品左半部分-表格：
+ 1.内边距20像素
+ 2.背景#84c8f2
+ 3.字颜色#0373b9
+ 4.加粗
+*/
+.sub1 th {
+  padding: 20px;
+  background-color: #84c8f2;
+  color: #0373b9;
+  font-weight: bold;
+}
+/*美食新品左半部分-表格：
+ 1.内边距15像素
+*/
+.sub1 td {
+  padding: 15px;
+}
+/*美食新品右半部分：
+ 1.宽326像素
+ 2.高300像素
+*/
+.sub2 {
+  width: 326px;
+  height: 300px;
+}
+/* 每个表单项样式：
+ 1.内边距：上下5像素 左右0
+*/
+.form-item {
+  padding: 5px 0;
+}
+/* 表单项标注样式：
+ 1.字号18像素
+ 2.行内块元素
+ 3.宽70像素
+*/
+.form-item label {
+  font-size: 18px;
+  display: inline-block;
+  width: 70px;
+}
+/*输入文本框和下拉列表的样式
+1.宽204像素
+2.高28像素
+3.边框：1像素 实线 #d2d2d2
+4.外框：无
+5.首行缩进20像素
+*/
+.form-item .tt,
+.form-item select {
+  width: 204px;
+  height: 30px;
+  border: 1px solid #d2d2d2;
+  outline: none;
+  text-indent: 20px;
+}
+/*提交按钮的样式：
+  1.宽190像素
+  2.高40像素
+  3.背景#0373b9
+  4.字号18像素
+  5.字颜色#fff
+  6.圆角20像素
+  7.鼠标手形
+  8.外边距:上下10像素 左右居中
+  9.块状显示
+  10.投影x0,y0,大小5px 颜色#0373b9
+  11.边框：1像素 实线 #0373b9
+ */
+.sub2 .but {
+  width: 190px;
+  height: 40px;
+  background: #0373b9;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+  box-shadow: 0 0 5px #0373b9;
+  border: 1px solid #0373b9;
+}
+/*页面底部：
+  1.高60像素
+  2.行高60像素，竖直居中
+  3.背景#0373b9
+  4.文字水平居中
+  5.字颜色#fff
+  6.外上边距30像素
+*/
+footer {
+  height: 60px;
+  line-height: 60px;
+  background: #0373b9;
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+}
