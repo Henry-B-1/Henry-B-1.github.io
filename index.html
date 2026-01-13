@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Generator" content="EditPlus®" />
+    <meta name="Author" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <title>LAPAPA蛋糕网</title>
+    <!--引入外部样式-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--头部-->
+    <header>
+      <!--top-->
+      <div class="top content">
+        <!--插图(images/logo.jpg)；class名为'left'-->
+        <img src="images/logo.jpg" class="left" />
+        <!--插图(images/phone.jpg)；class名为'right'-->
+        <img src="images/phone.jpg" class="right" />
+      </div>
+      <!--top-->
+      <!--nav-->
+      <div class="nav">
+        <!-- 跟据样张制作导航菜单，无序列表的class名为'content' -->
+        <ul class="content">
+          <li><a href="#">首页</a></li>
+          <li><a href="#">精品</a></li>
+          <li><a href="#">品牌故事</a></li>
+          <li><a href="#">时尚新品</a></li>
+          <li><a href="#">饭后甜点</a></li>
+          <li><a href="#">西式早茶</a></li>
+          <li><a href="#">与我联系</a></li>
+        </ul>
+      </div>
+      <!--nav-->
+      <!--banner-->
+      <div class="banner">
+        <!--插图(images/01~03.jpg)-->
+        <img src="images/03.jpg" />
+        <img src="images/02.jpg" />
+        <img src="images/01.jpg" />
+        <!--制作底部按钮，无序列表-->
+        <ul>
+          <li></li>
+          <li></li>
+          <li class="hot"></li>
+        </ul>
+      </div>
+      <!--banner-->
+    </header>
+    <!--内容-->
+    <section>
+      <div class="content">
+        <h2>LAPAPA蛋糕的故事</h2>
+        <ul class="list">
+          <!--按样张：插入4对列表项li,并在其中插图(images/1~4.jpg)；显示“更多”按钮的div的class名为info，支持超链接跳转-->
+          <li>
+            <img src="images/1.jpg" />
+            <div class="info">
+              <a href="#">更多</a>
+            </div>
+          </li>
+          <li>
+            <img src="images/2.jpg" />
+            <div class="info">
+              <a href="#">更多</a>
+            </div>
+          </li>
+          <li>
+            <img src="images/3.jpg" />
+            <div class="info">
+              <a href="#">更多</a>
+            </div>
+          </li>
+          <li>
+            <img src="images/4.jpg" />
+            <div class="info">
+              <a href="#">更多</a>
+            </div>
+          </li>
+        </ul>
+        <div style="clear: both"></div>
+        <h2>美食新品特色</h2>
+        <div class="box">
+          <div class="sub1 left">
+            <!-- 新品蛋糕表格 -->
+            <table>
+              <!-- 新品蛋糕表格的表头 -->
+              <thead>
+                <tr>
+                  <th>新品</th>
+                  <th>新品特色</th>
+                  <th>价格（6磅）</th>
+                  <th>价格（8磅）</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>提拉米苏</td>
+                  <td>80%的雪域老友也爱这一款</td>
+                  <td>￥168</td>
+                  <td>￥208</td>
+                </tr>
+                <tr>
+                  <td>芒果巴斯克</td>
+                  <td>巴斯克邂逅香甜芒果，一口满足！</td>
+                  <td>￥168</td>
+                  <td>￥208</td>
+                </tr>
+                <tr>
+                  <td>草莓拿破仑</td>
+                  <td>薄脆酥皮搭配清甜草莓</td>
+                  <td>￥168</td>
+                  <td>￥208</td>
+                </tr>
+                <tr>
+                  <td>黑森林</td>
+                  <td>沉浸于黑巧可可秘境</td>
+                  <td>￥168</td>
+                  <td>￥208</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="sub2 right">
+            <!--插入图片(images/zhuce.jpg)-->
+            <img src="images/zhuce.jpg" />
+            <form>
+              <div class="form-item">
+                <label for="name">姓名：</label>
+                <!--文本输入框,提示文字为'请输入姓名',class名为'tt'-->
+                <input type="text" id="name" placeholder="请输入姓名" class="tt" />
+              </div>
+              <div class="form-item">
+                <label for="phone">手机：</label>
+                <!--文本输入框,提示文字为'请输入手机号',class名为'tt'-->
+                <input type="text" id="phone" placeholder="请输入手机号" class="tt" />
+              </div>
+              <div class="form-item">
+                <label>中心：</label>
+                <!--下拉列表菜单，请选择蛋糕分店、北京蛋糕分店、上海蛋糕分店、广州蛋糕分店、深圳蛋糕分店-->
+                <select>
+                  <option>请选择蛋糕分店</option>
+                  <option>北京蛋糕分店</option>
+                  <option>上海蛋糕分店</option>
+                  <option>广州蛋糕分店</option>
+                  <option>深圳蛋糕分店</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <!--提交按钮,class名为'but'-->
+                <input type="submit" value="立即提交" class="but" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--页脚-->
+    <footer>LAPAPA蛋糕网版权所有2000-2016京ICP备08001421号 京公网安备</footer>
+    <!--动画制作-->
+    <!--引入库文件(js/jquery.js)-->
+    <script src="js/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        // banner轮播
+        var index = 0;
+        $(".banner ul li").mouseover(function () {
+          $(this).addClass("hot").siblings().removeClass("hot");
+          index = $(this).index();
+          $(".banner img").eq(index).fadeIn().siblings("img").fadeOut();
+        });
+      });
+    </script>
+  </body>
+</html>
